@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="icon" href="images/dino-stationary.png" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 style="font-size: 1.6rem">Dino Game</h1>
+      <a href="https://github.com/Gaks3/dino-game" class="github">
+        <img
+          src="images/github-mark.png"
+          alt="Github Image"
+          style="width: 3rem"
+        />
+      </a>
+    </div>
+    <div class="world" data-world>
+      <div class="score">
+        <div data-high-score></div>
+        <div data-score>0</div>
+      </div>
+      <div class="start-screen" data-start-screen>Press Any Key To Start</div>
+      <div class="lose-screen hide" data-lose-screen>
+        Game Over
+        <span>Press Any Key To Start</span>
+      </div>
+      <img
+        src="images/ground.png"
+        alt="Ground Image"
+        class="ground"
+        data-ground
+      />
+      <img
+        src="images/ground.png"
+        alt="Ground Image"
+        class="ground"
+        data-ground
+      />
+      <img
+        src="images/dino-stationary.png"
+        alt="Dino Stationary Image"
+        class="dino"
+        data-dino
+      />
+    </div>
+  </body>
+</html>

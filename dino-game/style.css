@@ -1,0 +1,101 @@
+@font-face {
+  font-family: geist;
+  src: url('font/GeistMono-SemiBold.ttf');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: geist;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.world {
+  overflow: hidden;
+  position: relative;
+  max-width: 1024px;
+  max-height: 250px;
+}
+
+.score {
+  position: absolute;
+  font-size: 3vmin;
+  right: 1vmin;
+  top: 1vmin;
+  display: flex;
+  gap: 2rem;
+}
+
+.start-screen {
+  position: absolute;
+  font-size: 5vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.lose-screen {
+  position: absolute;
+  font-size: 5vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.lose-screen > span {
+  font-size: medium;
+}
+
+.hide {
+  display: none;
+}
+
+.ground {
+  --left: 0;
+  position: absolute;
+  width: 300%;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
+
+.dino {
+  --bottom: 0;
+  position: absolute;
+  left: 1%;
+  height: 30%;
+  bottom: calc(var(--bottom) * 1%);
+}
+
+.cactus {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 30%;
+  bottom: 0;
+}
+
+.header {
+  position: absolute;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
